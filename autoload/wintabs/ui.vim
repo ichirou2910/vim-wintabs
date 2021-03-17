@@ -108,6 +108,7 @@ function! s:get_bufline_non_memoized(window, ...)
           \'is_active': is_active,
           \'is_active_window': is_active_window,
           \'ordinal': i + 1,
+          \'icon': (is_active ? ' %#wintabsIcon_'. wintabs#utils#getftp(bufname(buffer)) : ' %#WintabsInactive') . '#' . WebDevIconsGetFileTypeSymbol(bufname(buffer))
           \})
     let element.type = 'buffer'
     let element.number = buffer

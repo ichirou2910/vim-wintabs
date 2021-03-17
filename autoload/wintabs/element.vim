@@ -15,7 +15,8 @@ endfunction
 
 function! s:len(var)
   if type(a:var) == type('')
-    return strdisplaywidth(a:var)
+    let trun = substitute( a:var, '%#[a-zA-Z_]*#\ze', "", "" )
+    return strdisplaywidth(trun)
   endif
 
   if type(a:var) == type({})

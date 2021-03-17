@@ -115,10 +115,14 @@ endfunction
 
 function! wintabs#renderers#buf_label(bufnr, config)
   let label = g:wintabs_ui_buffer_name_format
-  let label = substitute(label, "%t", wintabs#renderers#bufname(a:bufnr), "g")
+  let label = substitute(label, "%t", 
+        \ (a:config.is_active ? 
+        \ a:config.is_active_window ? '%#WintabsActive#' : '%#WintabsInactive#' :
+        \ '%#WintabsInactive#') . wintabs#renderers#bufname(a:bufnr), "g")
   let label = substitute(label, "%n", a:bufnr, "g")
   let label = substitute(label, "%o", a:config.ordinal, "g")
-  return label
+  let label = substitute(label, "%i", a:config.icon, "g")
+  return '%#WintabsEmpty#'. label
 endfunction
 
 function! wintabs#renderers#tab_label(tabnr)
