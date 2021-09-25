@@ -24,7 +24,7 @@ function! wintabs#renderers#buffer(bufnr, config)
   let label = wintabs#renderers#buf_label(a:bufnr, a:config)
   let highlight = a:config.is_active ? 'WintabsActive' : 'WintabsInactive'
   let highlight = s:maybe_nc(highlight, a:config)
-  return { 'label': label, 'highlight': highlight }
+  return { 'label': ' '.label.' ', 'highlight': highlight }
 endfunction
 
 function! wintabs#renderers#icon(bufnr, config)
