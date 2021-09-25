@@ -111,6 +111,9 @@ if g:wintabs_display == 'statusline'
 endif
 
 " private
+call s:set('g:wintabs_ui_arrow_left', ' < ')
+call s:set('g:wintabs_ui_arrow_right', ' > ')
+call s:set('g:wintabs_ui_sep_spaceline', '|')
 call s:set('g:wintabs_undo_limit', 100)
 
 " seperation
