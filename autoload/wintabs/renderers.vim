@@ -131,20 +131,23 @@ function! wintabs#renderers#bufname(bufnr)
   if empty(name)
     let name = '[No Name]'
   endif
-  if getbufvar(a:bufnr, '&readonly')
-    let name = name.g:wintabs_ui_readonly
-  elseif getbufvar(a:bufnr, '&modified')
-    let name = name.g:wintabs_ui_modified
-  endif
   return name
 endfunction
 
+function! wintabs#renderers#bufmod(bufnr)
+  let mod = ''
+  if getbufvar(a:bufnr, '&readonly')
+    let mod = mod.g:wintabs_ui_readonly
+  elseif getbufvar(a:bufnr, '&modified')
+    let mod = mod.g:wintabs_ui_modified
+  endif
+  return mod
+endfunction
+
 function! wintabs#renderers#buf_label(bufnr, config)
-  let label = g:wintabs_ui_buffer_name_format
-  let label = substitute(label, "%t", wintabs#renderers#bufname(a:bufnr), "g")
-  let label = substitute(label, "%n", a:bufnr, "g")
-  let label = substitute(label, "%o", "", "g")
-  return label
+  let label = wintabs#renderers#bufname(a:bufnr)
+  let mod = wintabs#renderers#bufmod(a:bufnr)
+  return label.mod
 endfunction
 
 function! wintabs#renderers#buf_icon(bufnr, config)
