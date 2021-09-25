@@ -422,6 +422,8 @@ function! wintabs#init()
           \VimEnter,WinEnter,BufWinEnter,FileType,BufUnload,CompleteDone,
           \VimResized,TabEnter,BufWritePost,SessionLoadPost * call s:override_plugin_changes()
   augroup END
+
+  call wintabs#renderers#init()
 endfunction
 
 " refresh buffer list

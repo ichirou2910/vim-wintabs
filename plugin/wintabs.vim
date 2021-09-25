@@ -111,16 +111,32 @@ if g:wintabs_display == 'statusline'
 endif
 
 " private
-call s:set('g:wintabs_ui_arrow_left', ' < ')
-call s:set('g:wintabs_ui_arrow_right', ' > ')
-call s:set('g:wintabs_ui_sep_spaceline', '|')
 call s:set('g:wintabs_undo_limit', 100)
+
+" seperation
+call s:set('g:wintabs_ui_sep_left', " \u25c0 ")
+call s:set('g:wintabs_ui_sep_right', " \u25b6 ")
+call s:set('g:wintabs_ui_sep_buffer_transition', "\ue0b0")
+call s:set('g:wintabs_ui_sep_buffer', "\ue0b1")
+call s:set('g:wintabs_ui_sep_tab_transition', "\ue0b2")
+call s:set('g:wintabs_ui_sep_tab', "\ue0b3")
+
+" powerline highlight group
+highlight default link WintabsEmpty TabLineFill
+highlight default link WintabsActive TabLineSel
+highlight default link WintabsInactive TabLine
+highlight default link WintabsArrow TabLine
+highlight default link WintabsActiveNC TabLine
+highlight default link WintabsInactiveNC TabLine
 
 " init session
 call wintabs#session#init()
 
 " init undo list
 call wintabs#undo#init()
+
+" init icon highlighting
+call wintabs#icon#highlight()
 
 " start wintabs
 call wintabs#init()
