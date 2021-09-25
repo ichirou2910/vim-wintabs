@@ -100,6 +100,19 @@ function! s:get_bufline_non_memoized(window, ...)
       call add(line, element)
     endif
 
+    let icon_element = g:wintabs_renderers.icon(buffer, {
+          \'is_leftmost': 0,
+          \'is_rightmost': i == len(buffers) - 1,
+          \'is_left': active_index >= 0 && i < active_index,
+          \'is_right': active_index >= 0 && i > active_index,
+          \'is_active': is_active,
+          \'is_active_window': is_active_window,
+          \'ordinal': i + 1,
+          \})
+
+    let icon_element.type = 'buffer'
+    let icon_element.number = buffer
+
     let element = g:wintabs_renderers.buffer(buffer, {
           \'is_leftmost': 0,
           \'is_rightmost': i == len(buffers) - 1,
@@ -109,8 +122,11 @@ function! s:get_bufline_non_memoized(window, ...)
           \'is_active_window': is_active_window,
           \'ordinal': i + 1,
           \})
+
     let element.type = 'buffer'
     let element.number = buffer
+
+    call add(line, icon_element)
     call add(line, element)
 
     if is_next_active
