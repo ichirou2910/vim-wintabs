@@ -276,6 +276,11 @@ default: ' %t '
                 '%n': |bufnr()| of buffer
                 '%o': ordinal number of buffer
 
+*g:wintabs_ui_buffer_icon*
+values: 0 or 1
+default: 0
+                Whether or not wintab will display buffer icon.
+
 *g:wintabs_ui_vimtab_name_format*
 values: string
 default: ' %n '

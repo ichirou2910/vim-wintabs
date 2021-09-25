@@ -28,6 +28,9 @@ function! wintabs#renderers#buffer(bufnr, config)
 endfunction
 
 function! wintabs#renderers#icon(bufnr, config)
+  if g:wintabs_ui_buffer_icon == 0
+    return { 'label': '', 'highlight': '' }
+  endif
   let element = wintabs#renderers#buf_icon(a:bufnr, a:config)
   let highlight = a:config.is_active ? 'wintabsIcon_' . element.type : 'WintabsInactive'
   let highlight = s:maybe_nc(highlight, a:config)
@@ -145,7 +148,11 @@ function! wintabs#renderers#bufmod(bufnr)
 endfunction
 
 function! wintabs#renderers#buf_label(bufnr, config)
-  let label = wintabs#renderers#bufname(a:bufnr)
+  let label = g:wintabs_ui_buffer_name_format
+  let label = substitute(label, "%t", wintabs#renderers#bufname(a:bufnr), "g")
+  let label = substitute(label, "%n", a:bufnr, "g")
+  let label = substitute(label, "%o", a:config.ordinal, "g")
+
   let mod = wintabs#renderers#bufmod(a:bufnr)
   return label.mod
 endfunction
