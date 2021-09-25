@@ -3,177 +3,65 @@ let s:wintabs_icons = {
   \     "code": "",
   \     "color": "#999999"
   \   },
-  \   "stylus": {
-  \     "code": "",
-  \     "color": "#8dc149"
+  \   "angular": {
+  \     "code": "",
+  \     "color": "#E23237"
   \   },
-  \   "sass": {
-  \     "code": "",
-  \     "color": "#f55385"
+  \   "backbone": {
+  \     "code": "",
+  \     "color": "#0071B5"
   \   },
-  \   "html": {
-  \     "code": "",
-  \     "color": "#e37933"
-  \   },
-  \   "xml": {
-  \     "code": "謹",
-  \     "color": "#e37933"
-  \   },
-  \   "ejs": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "css": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "webpack": {
-  \     "code": "ﰩ",
-  \     "color": "#519aba"
-  \   },
-  \   "markdown": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "json": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "javascript": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "javascriptreact": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "ruby": {
-  \     "code": "",
-  \     "color": "#cc3e44"
-  \   },
-  \   "php": {
-  \     "code": "",
-  \     "color": "#a074c4"
-  \   },
-  \   "python": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "coffee": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "mustache": {
-  \     "code": "",
-  \     "color": "#e37933"
-  \   },
-  \   "conf": {
+  \   "bashrc": {
   \     "code": "",
-  \     "color": "#6d8086"
-  \   },
-  \   "image": {
-  \     "code": "",
-  \     "color": "#a074c4"
-  \   },
-  \   "ico": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "twig": {
-  \     "code": "",
-  \     "color": "#8dc149"
+  \     "color": "#4d5a5e"
   \   },
   \   "c": {
   \     "code": "",
   \     "color": "#519aba"
   \   },
-  \   "h": {
-  \     "code": "",
-  \     "color": "#a074c4"
-  \   },
-  \   "haskell": {
-  \     "code": "",
-  \     "color": "#a074c4"
-  \   },
-  \   "lua": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "java": {
-  \     "code": "",
-  \     "color": "#cc3e44"
-  \   },
-  \   "terminal": {
-  \     "code": "",
-  \     "color": "#4d5a5e"
-  \   },
-  \   "ml": {
-  \     "code": "λ",
-  \     "color": "#e37933"
-  \   },
-  \   "diff": {
-  \     "code": "",
-  \     "color": "#41535b"
-  \   },
-  \   "sql": {
-  \     "code": "",
-  \     "color": "#f55385"
-  \   },
   \   "clojure": {
   \     "code": "",
   \     "color": "#8dc149"
   \   },
-  \   "edn": {
-  \     "code": "",
+  \   "coffee": {
+  \     "code": "",
+  \     "color": "#cbcb41"
+  \   },
+  \   "conf": {
+  \     "code": "",
+  \     "color": "#6d8086"
+  \   },
+  \   "csharp": {
+  \     "code": "",
   \     "color": "#519aba"
   \   },
-  \   "scala": {
-  \     "code": "",
-  \     "color": "#cc3e44"
-  \   },
-  \   "go": {
-  \     "code": "",
+  \   "css": {
+  \     "code": "",
   \     "color": "#519aba"
   \   },
   \   "dart": {
   \     "code": "",
   \     "color": "#03589C"
   \   },
-  \   "firefox": {
-  \     "code": "",
-  \     "color": "#e37933"
-  \   },
-  \   "vs": {
-  \     "code": "",
-  \     "color": "#854CC7"
-  \   },
-  \   "perl": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "rss": {
-  \     "code": "",
-  \     "color": "#fb9d3b"
-  \   },
-  \   "csharp": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "fsharp": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "rust": {
-  \     "code": "",
-  \     "color": "#519aba"
+  \   "diff": {
+  \     "code": "",
+  \     "color": "#41535b"
   \   },
   \   "dlang": {
   \     "code": "",
   \     "color": "#cc3e44"
   \   },
-  \   "erlang": {
-  \     "code": "",
-  \     "color": "#A90533"
+  \   "docker": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "edn": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "ejs": {
+  \     "code": "",
+  \     "color": "#cbcb41"
   \   },
   \   "elixir": {
   \     "code": "",
@@ -183,64 +71,24 @@ let s:wintabs_icons = {
   \     "code": "",
   \     "color": "#519aba"
   \   },
-  \   "mix": {
-  \     "code": "",
-  \     "color": "#cc3e44"
-  \   },
-  \   "vim": {
-  \     "code": "",
-  \     "color": "#019833"
-  \   },
-  \   "ai": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "psd": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "psb": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "typescript": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "typescriptreact": {
-  \     "code": "",
-  \     "color": "#519aba"
-  \   },
-  \   "julia": {
-  \     "code": "",
-  \     "color": "#a074c4"
-  \   },
-  \   "puppet": {
-  \     "code": "",
-  \     "color": "#cbcb41"
-  \   },
-  \   "vue": {
-  \     "code": "﵂",
-  \     "color": "#8dc149"
-  \   },
-  \   "swift": {
-  \     "code": "",
-  \     "color": "#e37933"
-  \   },
-  \   "git": {
-  \     "code": "",
-  \     "color": "#41535b"
-  \   },
-  \   "bashrc": {
-  \     "code": "",
-  \     "color": "#4d5a5e"
+  \   "erlang": {
+  \     "code": "",
+  \     "color": "#A90533"
   \   },
   \   "favicon": {
   \     "code": "",
   \     "color": "#cbcb41"
   \   },
-  \   "docker": {
-  \     "code": "",
+  \   "fsharp": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "git": {
+  \     "code": "",
+  \     "color": "#41535b"
+  \   },
+  \   "go": {
+  \     "code": "",
   \     "color": "#519aba"
   \   },
   \   "gruntfile": {
@@ -251,65 +99,189 @@ let s:wintabs_icons = {
   \     "code": "",
   \     "color": "#cc3e44"
   \   },
-  \   "dropbox": {
-  \     "code": "",
-  \     "color": "#0061FE"
+  \   "h": {
+  \     "code": "",
+  \     "color": "#a074c4"
   \   },
-  \   "license": {
-  \     "code": "",
+  \   "haskell": {
+  \     "code": "",
+  \     "color": "#a074c4"
+  \   },
+  \   "html": {
+  \     "code": "",
+  \     "color": "#e37933"
+  \   },
+  \   "ico": {
+  \     "code": "",
   \     "color": "#cbcb41"
   \   },
-  \   "procfile": {
-  \     "code": "",
+  \   "image": {
+  \     "code": "",
+  \     "color": "#a074c4"
+  \   },
+  \   "java": {
+  \     "code": "",
+  \     "color": "#cc3e44"
+  \   },
+  \   "javascript": {
+  \     "code": "",
+  \     "color": "#cbcb41"
+  \   },
+  \   "javascriptreact": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "julia": {
+  \     "code": "",
   \     "color": "#a074c4"
   \   },
   \   "jquery": {
   \     "code": "",
   \     "color": "#1B75BB"
   \   },
-  \   "angular": {
-  \     "code": "",
-  \     "color": "#E23237"
+  \   "json": {
+  \     "code": "",
+  \     "color": "#cbcb41"
   \   },
-  \   "backbone": {
-  \     "code": "",
-  \     "color": "#0071B5"
+  \   "license": {
+  \     "code": "",
+  \     "color": "#cbcb41"
   \   },
-  \   "requirejs": {
-  \     "code": "",
-  \     "color": "#F44A41"
+  \   "lock": {
+  \     "code": "",
+  \     "color": "#999999"
+  \   },
+  \   "lua": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "markdown": {
+  \     "code": "",
+  \     "color": "#519aba"
   \   },
   \   "materialize": {
   \     "code": "",
   \     "color": "#EE6E73"
   \   },
+  \   "mix": {
+  \     "code": "",
+  \     "color": "#cc3e44"
+  \   },
+  \   "ml": {
+  \     "code": "λ",
+  \     "color": "#e37933"
+  \   },
   \   "mootools": {
   \     "code": "",
   \     "color": "#ECECEC"
   \   },
-  \   "vagrant": {
-  \     "code": "",
-  \     "color": "#1563FF"
+  \   "mustache": {
+  \     "code": "",
+  \     "color": "#e37933"
+  \   },
+  \   "perl": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "php": {
+  \     "code": "",
+  \     "color": "#a074c4"
+  \   },
+  \   "procfile": {
+  \     "code": "",
+  \     "color": "#a074c4"
+  \   },
+  \   "puppet": {
+  \     "code": "",
+  \     "color": "#cbcb41"
+  \   },
+  \   "python": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "requirejs": {
+  \     "code": "",
+  \     "color": "#F44A41"
+  \   },
+  \   "ruby": {
+  \     "code": "",
+  \     "color": "#cc3e44"
+  \   },
+  \   "rust": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "rss": {
+  \     "code": "",
+  \     "color": "#fb9d3b"
+  \   },
+  \   "sass": {
+  \     "code": "",
+  \     "color": "#f55385"
+  \   },
+  \   "scala": {
+  \     "code": "",
+  \     "color": "#cc3e44"
+  \   },
+  \   "sql": {
+  \     "code": "",
+  \     "color": "#f55385"
+  \   },
+  \   "stylus": {
+  \     "code": "",
+  \     "color": "#8dc149"
   \   },
   \   "svg": {
   \     "code": "ﰟ",
   \     "color": "#FFB13B"
   \   },
-  \   "font": {
-  \     "code": "",
-  \     "color": "#999999"
+  \   "swift": {
+  \     "code": "",
+  \     "color": "#e37933"
+  \   },
+  \   "terminal": {
+  \     "code": "",
+  \     "color": "#4d5a5e"
   \   },
   \   "text": {
   \     "code": "",
   \     "color": "#999999"
   \   },
-  \   "archive": {
-  \     "code": "",
-  \     "color": "#cc3e44"
+  \   "twig": {
+  \     "code": "",
+  \     "color": "#8dc149"
   \   },
-  \   "lock": {
-  \     "code": "",
-  \     "color": "#999999"
+  \   "typescript": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "typescriptreact": {
+  \     "code": "",
+  \     "color": "#519aba"
+  \   },
+  \   "vagrant": {
+  \     "code": "",
+  \     "color": "#1563FF"
+  \   },
+  \   "vim": {
+  \     "code": "",
+  \     "color": "#019833"
+  \   },
+  \   "vs": {
+  \     "code": "",
+  \     "color": "#854CC7"
+  \   },
+  \   "vue": {
+  \     "code": "﵂",
+  \     "color": "#8dc149"
+  \   },
+  \   "webpack": {
+  \     "code": "ﰩ",
+  \     "color": "#519aba"
+  \   },
+  \   "xml": {
+  \     "code": "謹",
+  \     "color": "#e37933"
   \   }
   \}
 
