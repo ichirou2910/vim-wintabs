@@ -7,7 +7,8 @@ CONTENTS                                                             *wintabs*
     2. Usage .......................................... |wintabs-usage|
     3. Commands and mappings .......................... |wintabs-commands|
     4. Options ........................................ |wintabs-options|
-    5. FAQ ............................................ |wintabs-faq|
+    5. Colors ......................................... |wintabs-colors|
+    6. FAQ ............................................ |wintabs-faq|
 
 ==============================================================================
 INTRO                                                          *wintabs-intro*
@@ -237,9 +238,6 @@ default: wintabs#renderers#defaults()
                 buffer renderer implementation inside 
                 `autoload/wintabs/renderers.vim`.
 
-                vim-wintabs-powerline provides a set of renderers for using 
-                Powerline fonts with wintabs.
-
 *g:wintabs_ui_modified*
 values: string
 default: ' +'
@@ -300,13 +298,55 @@ values: string of highlight group
 default: 'TabLineSel' or 'Normal', depending on |g:wintabs_display|
                 This sets the highlight group of the active wintab.
 
+*g:wintabs_ui_arrow_left*
+values: string
+default: ' \u25c0 '
+                Left pointing arrow, used as previous buffers indicator.
+
+*g:wintabs_ui_arrow_right* 
+value: string
+default: ' \u25b6 '
+
+                Right pointing arrow, used as next buffers indicator.
+
+*g:wintabs_ui_sep_buffer_transition*
+value: string
+default: '\ue0b0'
+
+                Separator between inactive and active buffers.
+
+*g:wintabs_ui_sep_buffer*
+value: string
+default: '\ue0b1'
+
+                Separator between inactive buffers.
+
+*g:wintabs_ui_sep_tab_transition*
+value: string
+default: '\ue0b2'
+
+                Separator between inactive and active vimtabs.
+
+*g:wintabs_ui_sep_tab*
+value: string
+default: '\ue0b3'
+
+                Separator between inactive vimtabs.
+
+==============================================================================
+COLORS                                                         *wintabs-color*
+>
+    highlight link WintabsEmpty       TabLineFill
+    highlight link WintabsActive      TabLineSel
+    highlight link WintabsInactive    TabLine
+    highlight link WintabsArrow       TabLine
+    highlight link WintabsActiveNC    TabLine
+    highlight link WintabsInactiveNC  TabLine
+<
+==============================================================================
+
 ==============================================================================
 FAQ                                                              *wintabs-faq*
-
-Q: Does wintabs support Powerline fonts?
-
-A: Yes. The vim-wintabs-powerline addon provides a set of renderers for using 
-Powerline fonts with wintabs.
 
 Q: Does wintabs support Vim sessions?
 
